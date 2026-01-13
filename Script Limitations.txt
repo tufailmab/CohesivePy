@@ -1,0 +1,11 @@
+**Limitation & Requirement**
+
+This script is narrowly scoped and will function correctly **only** for input files that include:
+
+- The keyword `*Cohesive Behavior`
+- Followed directly by a stiffness definition line containing `knn, kss, ktt`
+
+Absence of these elements means the script will skip modification (no error is raised, but no new files are generated either).
+
+Documentation reference:
+https://help.3ds.com/2024/English/DSSIMULIA_Established/SIMACAEMATRefMap/simamat-c-cohesivebehavior.htm
